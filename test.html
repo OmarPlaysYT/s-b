@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Website</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.language-switcher {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+</style>
+<body>
+    <header>
+        <div class="language-switcher">
+            <button id="french-btn">Français</button>
+            <button id="english-btn">English</button>
+        </div>
+    </header>
+
+    <main>
+        <h1 id="title">Bienvenue à Science et Au-delà</h1>
+        <h2 id="name">Je suis Omar!</h2>
+        <p id="description">Explorez les mystères de l'univers, des molécules microscopiques aux vastes galaxies!</p>
+    </main>
+
+
+</body>
+<script>
+    // Load the translations JSON file
+fetch('translations.json')
+    .then(response => response.json())
+    .then(translations => {
+        // Elements to change language
+        const title = document.getElementById('title');
+        const description = document.getElementById('description');
+        const name = document.getElementById('name');
+
+        // Language switch buttons
+        const frenchBtn = document.getElementById('french-btn');
+        const englishBtn = document.getElementById('english-btn');
+
+        // Default language: French
+        let currentLanguage = 'fr';
+
+        // Function to update the content
+        const updateContent = (language) => {
+            title.textContent = translations.title[language];
+            description.textContent = translations.description[language];
+            name.textContent = translations.name[language];
+            currentLanguage = language;
+        };
+
+        // Switch to French
+        frenchBtn.addEventListener('click', () => {
+            updateContent('fr');
+        });
+
+        // Switch to English
+        englishBtn.addEventListener('click', () => {
+            updateContent('en');
+        });
+
+        // Set the default content (French)
+        updateContent(currentLanguage);
+    })
+    .catch(error => console.error('Error loading translations:', error));
+</script>
+</html>

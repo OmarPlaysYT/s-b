@@ -1,0 +1,155 @@
+@media screen and (max-width: 1118px) {
+    .team {
+        margin-top: -120px;
+        margin: -150px auto;
+		margin-top: 0.7rem;
+    }
+}
+@media screen and (min-width: 1118px) {
+    .team {
+        margin-top: -40px;
+        margin: -50px auto;
+		margin-top: 0.7rem;
+    }
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.team{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    z-index: 0;
+}
+.team {
+    position: relative; /* For positioning the fade-out elements */
+    max-width: 1200px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+/* Fading effect on the left */
+.team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 40px; /* Adjust the width as needed */
+    pointer-events: none;
+    background: linear-gradient(to right, #111110, rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+/* Fading effect on the right */
+.team::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 40px; /* Adjust the width as needed */
+    pointer-events: none;
+    background: linear-gradient(to left, #111110, rgba(255, 255, 255, 0));
+}
+.team-content{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(9, minmax(200px, auto));
+    overflow: scroll;
+    overflow-y: hidden;
+	align-items: center;
+	gap: 1rem;
+	text-align: center;
+	/* margin-top: 4rem; */
+    cursor: grab; /* Show a grab cursor */
+    user-select: none; /* Prevent text selection */
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.team-content:active {
+    cursor: grabbing; /* Change to grabbing when dragging */
+}
+
+.team-content img{
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	margin-bottom: 15px;
+    border: 2px solid;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-color: rgb(47, 40, 0);
+    cursor: grab; /* Show a grab cursor */
+}
+.team-content img:active{
+    cursor: grabbing; /* Change to grabbing when dragging */
+}
+.center h1{
+	color: #fff;
+	font-size: 4rem;
+	text-align: center;
+}
+.box{
+	padding: 10px;
+    border: 2px solid;
+    border-top: 0px solid;
+    border-bottom: 0px solid;
+    border-color: rgb(47, 40, 0);
+	background: linear-gradient(#16151100, #302e23, #16151100, #16151100);
+	border-radius: 15px;
+	transition: all .38s ease;
+}
+.box h3{
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 8px;
+}
+.box h5{
+    font-family: Tommy;
+    font-weight: lighter;
+	font-size: 13px;
+	font-weight: 600;
+	color: #b7b4bb;
+	margin-bottom: 15px;
+	letter-spacing: 2px;
+}
+.icons i{
+	display: inline-block;
+	color: #fff;
+	font-size: 20px;
+	margin: 0 8px;
+	transition: all .38s ease;
+}
+.icons i:hover{
+	transform: scale(1.2);
+}
+.box:hover{
+	transform: translateY(-10px);
+    cursor: grab; /* Show a grab cursor */
+    z-index: 0;
+}
+.box:active{
+    cursor: grabbing; /* Change to grabbing when dragging */
+}
+
+@media(max-width: 1240px){
+	.team{
+		width: 100%;
+		height: auto;
+	}
+	.center h1{
+		font-size: 3.2rem;
+	}
+}

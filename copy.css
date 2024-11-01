@@ -1,0 +1,38 @@
+#copyMessage {
+    opacity: 0;
+    position: fixed;
+    color: rgb(255, 244, 159);
+    font-weight: bolder;
+    font-family: Designer;
+    font-weight: lighter;
+	background: linear-gradient(#29281e9e, #302e23, #29281e9e);
+    backdrop-filter: blur(5px);
+    padding: 12px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    transition: all 0.5s;
+    font-size: 22px;
+    bottom: 3%;
+    right: 3%;
+    border: 2px solid;
+    border-color: rgba(65, 55, 0, 0.672);
+}
+
+#copyMessage:hover {
+    box-shadow: 0 0 20px #34321d;
+    transform: perspective(23rem);
+}
+
+.copy-button {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+        /* Prevents text selection */
+        .no-select {
+            user-select: none;         /* Standard */
+            -webkit-user-select: none; /* Chrome, Safari */
+            -moz-user-select: none;    /* Firefox */
+            -ms-user-select: none;     /* IE 10+ */
+        }

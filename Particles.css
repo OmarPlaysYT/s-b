@@ -1,0 +1,38 @@
+#particles-js {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* ---------- Mobile // 320px — 480px ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    #particles-js {
+        height: 700px; /* test value */
+    }
+}
+
+/* ---------- iPads, Tablets // 481px — 768px ---------- */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #particles-js {
+        height: 0px; /* test value */
+    }
+}
+/* ---------- Small screens, laptops // 769px — 1024px ---------- */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    #particles-js {
+        height: 0px; /* test value */
+    }
+}
+/* ---------- Desktops, large screens // 1025px — 1200px ---------- */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    #particles-js {
+        height: 0px; /* test value */
+    }
+}
+/* ---------- Extra large screens, TV // 1201px and more ---------- */
+@media screen and (min-width: 1201px) {
+    #particles-js {
+        height: 3080px; /* test value */
+        width: 100%;
+    }
+}

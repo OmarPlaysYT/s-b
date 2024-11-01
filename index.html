@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+      <!--=============== ICONS & FONTS ===============-->
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="navbar.css">
+      <link rel="stylesheet" href="Particles.css">
+      <link rel="stylesheet" href="scroll-bar.css">
+      <link rel="stylesheet" href="MainStyle.css">
+      <link rel="stylesheet" href="Highlight.css">
+      <link rel="stylesheet" href="Team.css">
+      <link rel="stylesheet" href="loading.css">
+      <link rel="stylesheet" href="scroll-up.css">
+      <link rel="stylesheet" href="footer.css">
+      <link rel="stylesheet" href="copy.css">
+
+    <title>S&B - Accueil</title>
+</head>
+<style>
+   /*
+   * {
+    cursor: url('/images/CURSOR.png'), auto;
+   }
+    */
+    #mission-vision, #plan {
+      scroll-margin-top: 100px; /* Adjust as needed */
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+</style>
+<body>
+
+      <!--=============== PARTICLES ===============-->
+
+<div id="particles-js"></div>
+
+      <!--============ SCROLL-UP BUTTON ============-->
+
+<button class="button">
+  <svg class="svgIcon" viewBox="0 0 384 512">
+    <path
+      d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+    ></path>
+  </svg>
+</button>
+
+      <!--=============== HEADER ===============-->
+      <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#" class="nav__logo">
+                 <i class="ri-planet-line" style="color: rgba(255, 217, 0, 0.7);"></i> Science & Beyond
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+           <!--=============== NAV MENU ===============-->
+           <div class="nav__menu" id="nav-menu">
+              <ul class="nav__list">
+                 <li><a href="#" class="nav__link">Accueil</a></li>
+
+                 <li><a href="#mission-vision" class="nav__link">Mission & Vision</a></li>
+
+                 <li><a href="#plan" class="nav__link">Plan D'action</a></li>
+
+                 <!--=============== DROPDOWN 1 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Produits <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-t-shirt-line" style="color: rgba(255, 217, 0, 0.7);"></i> Vêtements
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-information-line" style="color: rgba(255, 217, 0, 0.7);"></i> Formations
+                          </a>
+                       </li>
+                       
+
+                       <!--=============== DROPDOWN SUBMENU ===============-->
+                       <li class="dropdown__subitem">
+                          <div class="dropdown__link">
+                             <i class="ri-bar-chart-line" style="color: rgba(255, 217, 0, 0.7);"></i> Reports <i class="ri-add-line dropdown__add"  style="color: rgba(255, 217, 0, 0.829);"></i>
+                          </div>
+
+                          <ul class="dropdown__submenu">
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-file-list-line" style="color: rgba(149, 127, 0, 0.392);"></i> Documents
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-cash-line" style="color: rgba(149, 127, 0, 0.392);"></i> Payments
+                                </a>
+                             </li>
+     
+                             <li>
+                                <a href="#" class="dropdown__sublink">
+                                   <i class="ri-refund-2-line" style="color: rgba(149, 127, 0, 0.392);"></i> Refunds
+                                </a>
+                             </li>
+                          </ul>
+                       </li>
+                    </ul>
+                 </li>
+                 
+                 <!-- <li><a href="#" class="nav__link">Products</a></li> -->
+
+                 <!--=============== DROPDOWN 2 ===============-->
+                 <li class="dropdown__item">
+                    <div class="nav__link">
+                       Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-user-line" style="color: rgba(255, 217, 0, 0.7);"></i> Profiles
+                          </a>                          
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-lock-line" style="color: rgba(255, 217, 0, 0.7);"></i> Accounts
+                          </a>
+                       </li>
+
+                       <li>
+                          <a href="#" class="dropdown__link">
+                             <i class="ri-message-3-line" style="color: rgba(255, 217, 0, 0.7);"></i> Messages
+                          </a>
+                       </li>
+                    </ul>
+                 </li>
+
+                <!-- <li><a href="#" class="nav__link">Contact</a></li> -->
+              </ul>
+           </div>
+        </nav>
+     </header>
+
+     <div class="topDiv">
+        <h1 class="topTitle">THERE'S SCIENCE IN <a class="cool">EVERYTHING</a></h1>
+     </div>
+     
+     <div class="Box">
+        <div class="notification">
+            <img src="/images/MainPicOff.png" alt="Trust">
+            <div class="notiglow"></div>
+            <div class="notiborderglow"></div>
+            <div class="notibody"><h2>SCIENCE & BEYOND</h2>
+                <p>Explore the wonders of the universe, from the microscopic to the cosmic! At Science and Beyond, curiosity knows no limits—join us and ignite your passion for discovery and innovation!</p>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------  MISSION & VISION -------------------------------------->
+
+    <div class="Primary">
+      <h3 id="mission-vision" class="Rass">MISSION & VISION</h3>
+  </div>
+  <div class="BoxSec">
+   <div class="notificationBox">
+       <div class="notiglow"></div>
+       <div class="notiborderglow"></div>
+       <div class="notibody"><h2>MISSION</h2>
+           <p><br><i class="ri-send-plane-2-fill"></i> Rendre la science accessible et inspirante pour tous par des activités interactives.</p>
+           <p><br><i class="ri-send-plane-2-fill"></i> Revaloriser l'importance du rôle du scientifique en renforçant son lien avec la société.</p>
+       </div>
+   </div>
+   <div class="notificationBox">
+      <div class="notiglow"></div>
+      <div class="notiborderglow"></div>
+      <div class="notibody"><h2>VISION</h2>
+         <p><br><i class="ri-send-plane-2-fill"></i> Restaurer l'image prestigieuse des scientifiques, symbole d'innovation et de progrès.</p>
+         <p><br><i class="ri-send-plane-2-fill"></i> Créer une communauté de leaders qui utiliseront la science pour un avenir meilleur.</p>
+      </div>
+  </div>
+</div>
+
+    <!----------------------- PLAN D'ACTION ---------------------------------------->
+
+<!--
+    <div class="middleDiv">
+      <h2 class="middleTitle">PLAN <a class="nice">D'ACTION</a></h2>
+   </div>
+-->
+
+   <div class="main">
+      <h3 id="plan" class="head">PLAN D'ACTION</h3>
+      <div class="container-plan">
+          <ul>
+              <li class="li-plan">
+                  <h3 class="heading">SEMAINE ART ET CULTUR <i class="ri-camera-fill"></i></h3>
+                  <p>Rejoignez-nous pour le Projet de Photographie Scientifique durant la Semaine de l'Art et de la Culture, du 21 au 26 Octobre 2024. Cette exposition unique explore l'intersection de la science et de la photographie, mettant en lumière des images qui capturent la beauté et la complexité des phénomènes scientifiques. Présenté par FSAC 2024.</p>
+                  <a href="#">Read More ></a>
+                  <span class="date">21 ➜ 26 /10/2024</span>
+                  <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+                  <h3 class="heading">SEMAINE DE LECTURE <i class="ri-book-2-fill"></i></h3>
+                  <p>Participez à la Semaine de Lecture du 11 au 16 Novembre 2024. Des ateliers sont proposés pour vous aider à lire des articles scientifiques, préparer une bibliographie de qualité et découvrir des outils d'intelligence artificielle. Un événement pour renforcer vos compétences en recherche et en documentation.</p>
+                  <a href="#">Read More ></a>
+                  <span class="date">11 ➜ 16 /11/2024</span>
+                  <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+                  <h3 class="heading">SEMAINE D'INCLUSION <i class="ri-group-fill"></i></h3>
+                  <p>Rejoignez-nous pour la Semaine de l'Inclusion du 2 au 7 décembre 2024. Un projet en collaboration avec les autres clubs de la FSAC, dédié à promouvoir l'inclusion et l'accessibilité pour tous. Des ateliers, discussions et activités pour célébrer la diversité et l'égalité.</p>
+                  <a href="#">Read More ></a>
+                  <span class="date">02 ➜ 07 /12/2024</span>
+                  <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+                  <h3 class="heading">SEMAINE SPORTIVE <i class="ri-basketball-fill"></i></h3>
+                  <p>Vivez la Semaine sportive! Du 3 au 8 février 2025, les enseignants de différents départements se défient lors d'un tournoi de football pour partager un moment de convivialité et de compétition amicale.</p>
+                  <a href="#">Read More ></a>
+                  <span class="date">03 ➜ 08 /02/2025</span>
+                  <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+               <h3 class="heading">SEMAINE DE SANTÉ <i class="ri-mental-health-fill"></i></h3>
+               <p>Du 17 au 22 février 2025, assistez à la Semaine de la santé, avec des conférences dédiées aux enjeux du stress, des addictions et de la dépression. Un rendez-vous pour sensibiliser et renforcer notre santé mentale.</p>
+               <a href="#">Read More ></a>
+               <span class="date">17 ➜ 22 /02/2025</span>
+               <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+               <h3 class="heading">SEMAINE DE LA FEMME <i class="ri-women-line"></i></h3>
+               <p>Rejoignez-nous pour la Semaine de la femme, du 3 au 8 mars 2025, un projet collaboratif avec les clubs de la FSAC. Une série d'événements et d'activités pour célébrer et soutenir les droits et réalisations des femmes.</p>
+               <a href="#">Read More ></a>
+               <span class="date">03 ➜ 08 /03/2025</span>
+               <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+               <h3 class="heading">SEMAINE DE L'ÉTUDIANT ÉTRANGER <i class="ri-user-heart-fill"></i></h3>
+               <p>Célébrez la Semaine de l'Étudiant Étranger, du 17 au 22 Mars 2025, un événement mettant en avant la diversité et l'inclusion culturelle sur notre campus. Découvrez les traditions et les richesses du Maghreb lors d'une journée spéciale, avec des activités, des échanges culturels et des présentations qui rassemblent la communauté étudiante autour de la découverte et de l'ouverture.</p>
+               <a href="#">Read More ></a>
+               <span class="date">17 ➜ 22 /03/2025</span>
+               <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+               <h3 class="heading">SEMAINE DU LEADERSHIP <i class="ri-vip-crown-2-fill"></i></h3>
+               <p>Découvrez la Semaine du Leadership Sportif - 14 au 19 Mai 2025, un événement unique consacré à l'exploration du leadership. Participez à des ateliers et conférences sur la leadership scientifique et ses influences positive, et apprenez à devenir un leader inspirant sur le terrain comme en dehors.</p>
+               <a href="#">Read More ></a>
+               <span class="date">07 ➜ 12 /04/2025</span>
+               <span class="circle"></span>
+              </li>
+              <li class="li-plan">
+               <h3 class="heading">SEMAINE DE L'ÉCOLOGIE <i class="ri-leaf-fill"></i></h3>
+               <p>Du 12 au 17 mai 2025, rejoignez-nous pour une marche écologique et une collecte de déchets sur la plage d'Ain Diab. Ensemble, agissons pour préserver notre environnement et sensibiliser à l'importance de la protection de notre planète.</p>
+               <a href="#">Read More ></a>
+               <span class="date">12 ➜ 17 /05/2025</span>
+               <span class="circle"></span>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+    <!------------------------ TEAM SECTION ---------------------------------------->
+    <div class="Hoader">
+    <h3 id="equipe" class="Equipe">NOTRE ÉQUIPE</h3>
+   </div>
+
+	<section class="team">
+		<div class="team-content" id="scroll-container">
+			<div class="box">
+				<img src="images/1.jpg" draggable="false">
+				<h3>Mounia Ammara</h3>
+				<h5>Présidente</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/2.jpg" draggable="false">
+				<h3>Imad Fenjar</h3>
+				<h5>Vice Président</h5>
+				<div class="icons">
+					<a href="https://www.linkedin.com/in/imad-fenjar-8988b9252/"><i class="ri-linkedin-box-fill"></i></a>
+					<a href="#"><i class="ri-phone-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/3.jpg" draggable="false">
+				<h3>Aicha Laasilate</h3>
+				<h5>Resources Humaines</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+			<div class="box">
+				<img src="images/4.jpg" draggable="false">
+				<h3>Ayman Chakkouri</h3>
+				<h5>Affaires Internes</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+            
+			<div class="box">
+				<img src="images/5.jpg" draggable="false">
+				<h3>Yassine Seghir</h3>
+				<h5>Communication</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+            
+			<div class="box">
+				<img src="images/6.jpg" draggable="false">
+				<h3>Majdouline Aziz</h3>
+				<h5>Secrétaire Générale</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+            
+			<div class="box">
+				<img src="images/7.jpg" draggable="false">
+				<h3>Maha Jalaly</h3>
+				<h5>Affaires Externes</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+            
+			<div class="box">
+				<img src="images/8.jpg" draggable="false">
+				<h3>Yasmine Razzouk</h3>
+				<h5>Contrôle d'exécution</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+
+            <div class="box">
+				<img src="images/9.jpg" draggable="false">
+				<h3>Wissal Hansi</h3>
+				<h5>Trésorière</h5>
+				<div class="icons">
+					<a href="#"><i class="ri-twitter-fill"></i></a>
+					<a href="#"><i class="ri-facebook-box-fill"></i></a>
+					<a href="#"><i class="ri-instagram-fill"></i></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+   <footer>
+      <div class="footer-container">
+          <div class="footer-column">
+              <h3>LINKS</h3>
+              <ul>
+                <li><a href="https://omarmenu.xyz/copyright">Home</a></li>
+                <li><a href="https://omarmenu.xyz/our-cheats">Mission & Vision</a></li>
+                <li><a href="https://omarmenu.xyz/others-cheats">Plan D'action</a></li>
+              </ul>
+          </div>
+          <div class="footer-column">
+              <h3>PRODUITS</h3>
+              <ul>
+                  <li><a href="https://omarmenu.xyz/about-us/">Vêtements</a></li>
+                  <li><a href="https://omarmenu.xyz/supported-games/">Tutorat</a></li>
+                  <li><a href="https://omarmenu.xyz/supported-cheats/">Programmation</a></li>
+  
+              </ul>
+          </div>
+          <div class="footer-column newsletter">
+            <h3>CONTACT</h3>
+            <div id="copyButton" class="contact-info">
+               <p>Email: <span id="emailText" class="copy-button" onclick="copyToClipboard()">scienceandbeyond2021@gmail.com</span></p>
+               <p id="copyText" style="display: none;">scienceandbeyond2021@gmail.com</p>
+               <span class="no-select" id="copyMessage">Copied!</span>
+           </div>
+              <div class="social-icons">
+                  <a class="social" href="https://www.youtube.com/@omarcheats"><i class="ri-instagram-fill"></i></i></a>
+                  <a class="social" href="https://discord.gg/OmarCheats"><i class="ri-linkedin-box-fill"></i></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>© 2024 scienceandbeyond.com</p>
+          <div class="footer-links">
+              <a href="https://omarmenu.xyz/terms-&-conditions/">Terms & Conditions</a>
+              <a href="https://omarmenu.xyz/privacy-policy">Privacy Policy</a>
+              <a href="https://omarmenu.xyz/refund-policy">Refund Policy</a>
+              <a href="https://omarmenu.xyz/delivery-policy">Delivery Policy</a>
+          </div>
+      </div>
+  </footer>
+
+
+</body>
+
+<!--=============== MAIN JS ===============-->
+    <!--== Nav Bar ===-->
+<script src="navbar.js"></script>
+    <!--== Particles ===-->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="particles.js"></script>
+<script src="scroll.js"></script>
+<script src="scroll-up.js"></script>
+<script src="copy.js"></script>
+
+</html>
